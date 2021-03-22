@@ -1,0 +1,661 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+p,
+figure {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 16px;
+    margin: 0 auto;
+}
+
+h1,
+h2,
+h3 {
+    text-transform: uppercase;
+}
+
+
+/*h1,
+h1 a,
+nav a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+header {
+    display: flex;
+    width: 100%;
+    background-color: #6a7aff;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header>div {
+    /* margin: 0 0 0 100px; 
+    margin-left: 100px;
+}
+*/
+
+
+/* checkbox do menu mobile */
+
+
+/*input#control-nav {
+    visibility: hidden;
+    opacity: 0;
+}*/
+
+
+/* tornar as imgs preparadas para design responsivo */
+
+img {
+    max-width: 100%;
+}
+
+header img {
+    height: 90px;
+    width: 90px;
+}
+
+
+/*
+header>nav {
+    margin-right: 100px;
+}*/
+
+
+/* 
+nav {
+    display: inline-flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav ul {
+    display: inline-flex;
+}
+
+nav li {
+    margin: 0 15px;
+    list-style-type: none;
+}
+
+nav a {
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a[href='#'] {
+    border-bottom: 1px solid #ddd;
+} */
+
+nav a:visited {
+    color: rgba(0, 0, 0, 0.8);
+}
+
+nav a:hover,
+nav a:focus,
+nav a:active {
+    color: #222;
+    transform: scale(1.1);
+    transition: all .5s;
+}
+
+nav a:focus {
+    color: #222;
+}
+
+
+/* end css header */
+
+
+/*start slider*/
+
+
+/*.slider {
+    width: 100%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    height: 400px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.slider>img {
+    position: absolute;
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    /*object-position: 0px 0px;
+}*/
+
+
+/*end slider*/
+
+
+/* start section tecnologias */
+
+section {
+    margin: 60px auto;
+    width: 100%;
+    text-align: center;
+}
+
+.tecnologias {
+    width: 30%;
+    display: inline-block;
+    margin: 0 15px;
+    text-align: left;
+    vertical-align: top;
+    height: auto;
+}
+
+.tecnologias h2 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.tecnologias img {
+    width: 100%;
+    /* height: 150px; */
+}
+
+.tecnologias a {
+    font-weight: bold;
+    color: #000;
+    text-decoration: none;
+}
+
+.tecnologias a:visited {
+    color: #222;
+}
+
+.tecnologias a:hover {
+    color: #222;
+    transform: scale(1.1);
+    /* scale não funciona */
+    transition: all .5s;
+}
+
+.tecnologias p {
+    margin-bottom: 10px;
+}
+
+
+/* end section tecnologias*/
+
+aside {
+    padding: 30px 0;
+}
+
+aside h2 {
+    margin-bottom: 20px;
+}
+
+.btn-personalizado {
+    padding: 15px 25px;
+    background-color: green;
+    color: white;
+    font-size: 18px;
+    border: solid white 3px;
+    border-radius: 20px;
+}
+
+.btn-personalizado:hover,
+.btn-personalizado:focus {
+    background-color: rgba(63, 191, 63, .9);
+    transition: all .5s;
+    transform: scale(1.1);
+    /* transform: rotate(50deg); rotação do elemento ao hover (passar o mouse) */
+}
+
+
+/* start section da pagina produtos */
+
+.sec-tabela {
+    margin: 0 auto;
+    width: 55%;
+}
+
+.sec-tabela h2 {
+    margin-top: 40px;
+}
+
+.sec-tabela table {
+    margin: 40px auto;
+    border-collapse: collapse;
+}
+
+.sec-tabela thead {
+    background-color: #ccc;
+}
+
+.sec-tabela th {
+    padding: 5px 20 px;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.sec-tabela td {
+    padding: 5px 20px;
+}
+
+.sec-tabela tbody tr:nth-child(odd) {
+    background: #e9e3ce;
+    border: 1px solid #333;
+}
+
+.sec-tabela tbody tr:nth-child(even) {
+    background: #c8a2c8;
+    border: 1px solid #333;
+}
+
+.fadeOut {
+    opacity: 0;
+    transition: all .5s;
+}
+
+.aprovado {
+    color: green;
+    font-weight: bold;
+}
+
+.reprovado {
+    color: red;
+    font-weight: bold;
+}
+
+.produtos article {
+    width: 45%;
+    height: 600px;
+    text-align: center;
+    margin: 20px;
+}
+
+.produtos li {
+    text-align: left;
+    margin-left: 20px;
+}
+
+.coluna-1 {
+    float: left;
+}
+
+.coluna-2 {
+    float: right;
+}
+
+#cta {
+    clear: both;
+}
+
+.produtos img {
+    height: 400px;
+}
+
+
+/* end section da pagina produtos */
+
+
+/* start section da pagina servicos */
+
+#title-service {
+    text-align: center;
+    font-size: 2.3rem;
+    color: #222;
+    margin-top: 50px;
+}
+
+.horizontal-row {
+    margin-bottom: 70px;
+    width: 25%;
+    height: 0.4rem;
+    background: rgba(34, 34, 34, .7);
+    border-radius: 25px;
+}
+
+.servicos {
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-around;
+}
+
+.servicos article {
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.servicos h2 {
+    margin-bottom: 3%;
+}
+
+.servicos img {
+    height: 320px;
+    width: 70%;
+}
+
+.servicos article:first-child img {
+    box-shadow: 10px 10px 100px red;
+    filter: blur(5px) grayscale(10);
+}
+
+.servicos article:first-child img:hover {
+    box-shadow: 15px 15px 100px blue;
+    filter: blur(0);
+    transform: scale(1.1) rotate(720deg);
+    transition: all 5s;
+}
+
+.servicos article:last-child img {
+    -webkit-box-shadow: -50px -50px 100px #999;
+    -moz-box-shadow: -50px -50px 100px #999;
+    -ms-box-shadow: -50px -50px 100px #999;
+    box-shadow: -50px -50px 100px #999, 25px 10px 30px blue;
+    /* consultar can i use - compatibiidade com browsers */
+}
+
+
+/* end section da pagina servicos */
+
+.carousel-item {
+    height: 300px;
+}
+
+.carousel-item img {
+    height: 300px;
+    object-fit: cover;
+    filter: brightness(0.7);
+}
+
+.carousel-item img:nth-clid(4) {
+    object-position: 0 -250px;
+}
+
+
+/* start pagina contato */
+
+
+/*#contato {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: center;
+}*/
+
+
+/*#mapa,*/
+
+
+/*#formulario {
+    width: 45%;
+    margin: 0 auto;
+}
+
+#form-adiciona-aluno {
+    width: 70%;
+    margin: 0 auto;
+}
+
+legend {
+    font-weight: bold;
+}
+
+#formulario {
+    text-align: left;
+}
+
+legend {
+    font-weight: bold;
+}
+
+#formulario label,
+#form-adiciona-aluno label {
+    font-weight: bold;
+    display: block;
+}
+
+#formulario input,
+#formulario textarea,
+#form-adiciona-aluno input {
+    margin-top: 3px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+#formulario input[type="submit"] {
+    width: 30%;
+}
+
+
+/* end pagina contato */
+
+
+/* start css footer */
+
+footer {
+    background-color: rgba(106, 122, 255, .6);
+    /* background-image: url(../images/destaque-1.jpg); */
+    text-align: center;
+    padding: 50px 0;
+}
+
+footer h3 {
+    margin-bottom: 15px;
+}
+
+
+/* last-child seleciona o ultimo elemento */
+
+footer p:last-child {
+    margin-top: 50px;
+}
+
+footer address {
+    text-align: left;
+    margin-left: 50px;
+}
+
+
+/* end css footer */
+
+@media screen and (max-width: 990px) {
+    .tecnologias {
+        width: 60%;
+        /* margin: 0 15px 30px; */
+        /* margin: 0 15px 30px 15px; */
+        margin-bottom: 30px;
+    }
+    .tecnologias:last-child {
+        margin-bottom: 0;
+    }
+    .produtos article {
+        margin: 20px auto;
+    }
+    .coluna-1,
+    .coluna-2 {
+        float: none;
+    }
+    .servicos {
+        display: block;
+        margin-bottom: 20px;
+    }
+    /*#contato {
+        display: block;*/
+}
+
+
+/* #mapa {
+        width: 100%;
+        margin-bottom: 7%;
+    }*/
+
+
+/*#formulario {
+    width: 70%;
+    /* margi: top - R, L - bottom 
+    margin: 0 auto 7%;
+}*/
+
+
+}
+@media screen and (max-width: 768px) {
+    .produtos img {
+        height: auto;
+    }
+    
+    #title-service {
+        font-size: 1.5rem;
+    }
+    
+    .horizontal-row {
+        width: 20%;
+        height: .2rem;
+    }
+    
+    header img {
+        max-width: none;
+    }
+}
+
+/* start menu mobile */
+
+/*@media screen and (max-width: 650px) {
+    header .control-nav {
+        position: absolute;
+        right: 20px;
+        top: 40px;
+        display: block;
+        width: 30px;
+        padding: 5px 0;
+        border: solid #fff;
+        border-width: 3px 0;
+        cursor: pointer;
+        z-index: 3;
+    }
+    
+    header .control-nav:before {
+        content: "";
+        display: block;
+        height: 2px;
+        background: #fff;
+    }
+    
+    header .control-nav-close {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        display: block;
+        z-index: 1;
+        background: rgba(0, 0, 0, 0.4);
+        -webkit-transition: all 500ms ease;
+        transition: all 500ms ease;
+        -webkit-transform: translate(100%, 0);
+        -moz-transform: translate(100%, 0);
+        -ms-transform: translate(100%, 0);
+        transform: translate(100%, 0);
+    }
+    
+    header nav {
+        position: fixed;
+        top: 0;
+        right: -250px;
+        bottom: 0;
+        border-left: solid #777 1px;
+        background: #999;
+        overflow-x: auto;
+        z-index: 2;
+        -webkit-transition: all 500ms ease;
+        transition: all 500ms ease;
+        -webkit-transform: translate(100%, 0);
+        -moz-transform: translate(100%, 0);
+        -ms-transform: translate(100%, 0);
+        transform: translate(100%, 0);
+        margin-right: 250px;
+    }
+    
+    nav ul {
+        display: block;
+    }
+    
+    nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        align-items: flex-end;
+        padding: 80px 0 0 0;
+    }
+    
+    nav a:focus,
+    nav a:active {
+        color: #FFF;
+    }
+    
+    nav li a {
+        display: block;
+        line-height: 30px;
+        margin-right: 5px;
+    }
+    
+    #control-nav:checked~.control-nav-close {
+        -webkit-transform: translate(0, 0);
+        -moz-transform: translate(0, 0);
+        -ms-transform: translate(0, 0);
+        transform: translate(0, 0);
+    }
+    
+    #control-nav:checked~nav {
+        -webkit-transform: translate(0, 0);
+        -moz-transform: translate(0, 0);
+        -ms-transform: translate(0, 0);
+        transform: translate(0, 0);
+    }
+    
+    .produtos article {
+        width: 75%;
+        height: auto;
+    }
+}
+*/
+
+/* end menu mobile */
+@media screen and (max-width: 370px) {
+    section aside {
+        text-align: center;
+        margin: 0 auto;
+        width: 85%;
+    }
+    
+    .servicos img {
+        width: 75%;
+        height: auto;
+    }
+    
+    iframe {
+        height: 280px;
+    }
+    
+    a[href='#'] {
+        border-bottom: 1px solid #ddd;
+    }
+}

@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Thiago Piacentini" />
+    <meta name="description" content="Descrição da pagina com até 148 caracteres" />
+    <meta name="keywords" content="palavra, chave, separada, por, virgula" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Serviços</title>
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/preview.css">
+</head>
+
+<body>
+    <div>
+        <!-- start header -->
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <a class="navbar-brand" href="../index.html">
+                    <img src="../img/logo-html5.svg" alt="logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item ">
+                            <a class="nav-link" href="../index.html">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="produtos.html">Produtos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Serviços</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contato.html" tabindex="-1" aria-disabled="true">Contato</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <!-- end  header -->
+
+        <!--Start slider-->
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block w-100" src="../img/destaque-1.jpg" alt="Primeiro Slide">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h3>Primeira Imagem</h3>
+                        <p>descrição da minha primeira imagem</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="../img/destaque-2.jpg" alt="Segundo Slide">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Segunda Imagem</h5>
+                        <p> descrição da segunda imagem</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="../img/destaque-3.jpg" alt="Terceiro Slide">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h6>Terceira Imagem</h6>
+                        <p> descrição da terceira imagem</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="../img/contato-destaque.jpg" alt="Terceiro Slide">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h2>Quarta Imagem</h2>
+                        <p> descrição da quarta imagem</p>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Anterior</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Próximo</span>
+            </a>
+        </div>
+        <!--end carousel-->
+
+        <!-- start section serviços  -->
+        <h2 id="title-service">Serviços</h2>
+        <hr class="horizontal-row">
+        <!-- start section preview -->
+        <section class="button-creator">
+            <form clas="controles">
+
+                <label for="texto">Texto</label>
+                <input type="text" name="texto" id="texto">
+
+                <label for="color">Color</label>
+                <input type="color" name="color" id="color">
+
+                <label for="BackgroundColor">BackgroundColor</label>
+                <input type="color" name="BackgroundColor" id="BackgroundColor">
+
+                <label for="height">height</label>
+                <input type="range" name="height" id="height" min="0" max="200">
+
+                <label for="width">width</label>
+                <input type="range" name="width" id="width" min="0" max="600">
+
+                <label for="border">border</label>
+                <input type="text" name="border" id="border">
+
+                <label for="borderRadius">border Radius</label>
+                <input type="range" name="borderRadius" id="borderRadius">
+
+                <label for="fontFamily">Font Family</label>
+                <select name="fontFamily" id="fontFamily">
+                    <option value="Arial">Arial</option>
+                    <option value="Georgia">Georgia</option>
+                    <option value="nonospace">Arial</option>
+                </select>
+
+                <label for="fontSize">FontSize</label>
+                <input type="number" name="fontSize" id="fontSize">
+            </form>
+
+            <section>
+                <button class="btn-preview">Clique</button>
+                <pre><code class="css-preview"></code></pre>
+            </section>
+        </section>
+
+
+
+
+
+
+
+        <section class="servicos">
+            <article>
+                <h2>cloud</h2>
+                <img src="../img/cloud.jpg" alt="cloud" title="cloud">
+            </article>
+
+            <article>
+                <h2>banco de dados</h2>
+                <img src="../img/banco-dados.jpg" alt="DB" title="DB">
+            </article>
+        </section>
+
+        <section class="servicos">
+            <article>
+                <h2>virtualização de servidores</h2>
+                <img src="../img/virtualizacao.png" alt="virtualização de servidores" title="virtualização de servidores">
+            </article>
+
+            <article>
+                <h2>BI</h2>
+                <img src="../img/bi.jpg" alt="BI" title="BI">
+            </article>
+        </section>
+        <!-- end section serviços-->
+
+        <!-- start section com aside -->
+        <section>
+            <aside>
+                <h2>Fale com um especialista</h2>
+                <button class="btn-personalizado">Clique aqui!</button>
+            </aside>
+        </section>
+        <!-- end section com aside -->
+
+        <footer>
+            <h3>Siga nossa redes</h3>
+            <p>
+                <a href="https://facebook.com" target="_blank"><img src="../img/facebook.png" alt="Facebook" title="Facebook" /></a>
+                <a href="https://instagram.com" target="_blank"><img src="../img/instagram.png" alt="Instagram" title="Instagram" /></a>
+                <a href="https://twitter.com" target="_blank"><img src="../img/twitter.png" alt="Twitter" title="Twitter" /></a>
+                <a href="https://linkedin.com" target="_blank"><img src="../img/linkedin.png" alt="Linkedin" title="Linkedin" /></a>
+                <a href="https://youtube.com" target="_blank"><img src="../img/youtube.png" alt="Youtube" title="Youtube" /></a>
+            </p>
+
+            <address>
+          <p>
+            Av Paulista, 1009 <br>
+            CEP: 00000-000 <br>
+            São Paulo / SP <br>
+            Tel. 11 1234-5678
+          </p>
+        </address>
+
+
+            <p><em>Desenvolvido</em> por <strong>Thiago</strong> &copy; 2021 | Nenhum direito reservado.</p>
+        </footer>
+
+        <script src="../js/jquery-min.3.5.1.js"></script>
+        <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.js"></script>
+        <script src="../bootstrap/js/bootstrap.min.js"></script>
+        <script src="../js/local-storage.js"></script>
+        <script src='../js/personalizacao.js'></script>
+    </div>
+</body>
+
+</html>

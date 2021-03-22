@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Thiago Piacentini" />
+    <meta name="description" content="Descrição da pagina com até 148 caracteres" />
+    <meta name="keywords" content="palavra, chave, separada, por, virgula" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Produtos</title>
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <div>
+        <!-- start header -->
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <a class="navbar-brand" href="../index.html">
+                    <img src="../img/logo-html5.svg" alt="logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="../index.html">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Produtos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="servicos.html">Serviços</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contato.html" tabindex="-1" aria-disabled="true">Contato</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <!-- end  header -->
+
+        <!--Start slider-->
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block w-100" src="../img/destaque-1.jpg" alt="Primeiro Slide">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h3>Primeira Imagem</h3>
+                        <p>descrição da minha primeira imagem</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="../img/destaque-2.jpg" alt="Segundo Slide">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Segunda Imagem</h5>
+                        <p> descrição da segunda imagem</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="../img/destaque-3.jpg" alt="Terceiro Slide">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h6>Terceira Imagem</h6>
+                        <p> descrição da terceira imagem</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="../img/contato-destaque.jpg" alt="Terceiro Slide">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h2>Quarta Imagem</h2>
+                        <p> descrição da quarta imagem</p>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Anterior</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Próximo</span>
+            </a>
+        </div>
+        <!--end slider-->
+
+        <!-- start section com table  -->
+        <section class="table-responsive px-5">
+            <h2>Grade de cursos</h2>
+
+            <button class="btn btn-primary my-3" id="carregar">Listar Alunos</button>
+
+            <table class="table table-striped table-sm">
+                <thead class="text-uppercase">
+                    <tr>
+                        <th>aluno</th>
+                        <th>curso</th>
+                        <th>nota</th>
+                        <th>status</th>
+                        <th>remover</th>
+                    </tr>
+                </thead>
+
+                <tbody id=" tabela-alunos ">
+                    <tr>
+                        <td>Thiago</td>
+                        <td>ads</td>
+                        <td>7</td>
+                        <td>ativo</td>
+                        <td><button id="remove">Remover</button>
+                        </td>
+                    </tr>
+
+                    <tr id="aluno ">
+                        <td>Pietro</td>
+                        <td>adm</td>
+                        <td>5</td>
+                        <td>inativo</td>
+                        <td>
+                            <button id="remove">Remover</button>
+                        </td>
+                    </tr>
+                </tbody>
+                <tbody id="dados">
+                </tbody>
+            </table>
+        </section>
+        <!-- end section com table -->
+
+        <form id="form-adiciona-aluno ">
+
+            <div class="form-row ">
+                <div class="form-group col-md-3 col-sm-12">
+                    <label for="nome ">Aluno</label>
+                    <input class="form-control " type="text " id="nome " name="nome " required placeholder="Nome do Aluno ">
+                </div>
+                <div class="form-group col-md-3 col-sm-12">
+                    <label for="curso>">Curso</label>
+                    <input class="form-control" type="text" id="curso" name="curso" required placeholder="Nome do curso">
+                </div>
+
+                <div class="form-group col-md-3 col-sm-12">
+                    <label for="nota">Nota</label>
+                    <input class="form-control" type="text" id="nota" name="nota" required placeholder="Nota do aluno">
+                </div>
+
+                <div class="form-group col-md-3 col-sm-12">
+                    <label for="status">Status</label>
+                    <input class="form-control" type="text" name="status" id="status" required placeholder="status">
+                </div>
+            </div>
+            <button class="btn btn-info" id="btn-adiciona-aluno">Adicionar</button>
+        </form>
+
+        <!-- start section produtos-->
+        <section class="produtos">
+            <!-- article 1 -->
+            <article class="coluna-1">
+                <h2>UI / UX Design</h2>
+                <img src="../img/ui-ux-design.png" alt="UI UX Design" title="UI UX Design">
+                <ul>
+                    <li>Empatia</li>
+                    <li>Definir</li>
+                    <li>Idealizar</li>
+                    <li>Prototipar</li>
+                    <li>Testar</li>
+                </ul>
+            </article>
+
+            <!-- article 2 -->
+            <article class="coluna-2">
+                <h2>Desenvolmento</h2>
+                <img src="../img/desenvolvimento.jpg" alt="desenvolvimento" title="desenvolvimento">
+                <ol reversed>
+                    <li>Inovação</li>
+                    <li>Triagem</li>
+                    <li>Teste de conceito</li>
+                    <li>Análise de viabilidade</li>
+                    <li>Teste de mercado</li>
+                    <li>Comercialização</li>
+                </ol>
+            </article>
+
+            <article class="coluna-1">
+                <h2>Marketing Digital</h2>
+                <img src="../img/marketing-digital.jpg" alt="mkt digital" title="mkt digital">
+                <ol start="3" type="A">
+                    <li>Análise de cenário</li>
+                    <li>Benchmarking</li>
+                    <li>Palavra-chave</li>
+                    <li>Persona</li>
+                    <li>Plano editorial</li>
+                </ol>
+            </article>
+
+            <article class="coluna-2">
+                <h2>Design</h2>
+                <img src="../img/design.jpg" alt="design" title="design">
+                <ol type="a">
+                    <li>Briefing</li>
+                    <li>Brainstorming</li>
+                    <li>Mock-ups</li>
+                    <li>Implementação</li>
+                    <li>Acompanhamento</li>
+                </ol>
+            </article>
+        </section>
+        <!-- end section produtos -->
+
+        <!-- start section com aside -->
+        <section id="cta">
+            <aside>
+                <h2>Fale com um especialista</h2>
+                <button class="btn-personalizado">Clique aqui!</button>
+            </aside>
+        </section>
+        <!-- end section com aside -->
+
+        <footer>
+            <h3>Siga nossa redes</h3>
+            <p>
+                <a href="https://facebook.com" target="_blank"><img src="../img/facebook.png" alt="Facebook" title="Facebook" /></a>
+                <a href="https://instagram.com" target="_blank"><img src="../img/instagram.png" alt="Instagram" title="Instagram" /></a>
+                <a href="https://twitter.com" target="_blank"><img src="../img/twitter.png" alt="Twitter" title="Twitter" /></a>
+                <a href="https://linkedin.com" target="_blank"><img src="../img/linkedin.png" alt="Linkedin" title="Linkedin" /></a>
+                <a href="https://youtube.com" target="_blank"><img src="../img/youtube.png" alt="Youtube" title="Youtube" /></a>
+            </p>
+
+            <address>
+          <p>
+            Av Paulista, 1009 <br>
+            CEP: 00000-000 <br>
+            São Paulo / SP <br>
+            Tel. 11 1234-5678
+          </p>
+        </address>
+
+            <p><em>Desenvolvido</em> por <strong>Thiago</strong> &copy; 2021 | Nenhum direito reservado.</p>
+        </footer>
+    </div>
+    <script src="../js/jquery-min.3.5.1.js"></script>
+    <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.js"></script>
+    <script src="../bootstrap/js/bootstrap.min.js"></script>
+    <script src="../js/adiciona-aluno.js"></script>
+    <script src="../js/listar-aluno.js"></script>
+    <script src='../js/personalizacao.js'></script>
+</body>
+
+</html>

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Thiago Piacentini" />
+    <meta name="description" content="Descrição da pagina com até 148 caracteres" />
+    <meta name="keywords" content="palavra, chave, separada, por, virgula" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Home</title>
+</head>
+
+<body>
+    <div>
+        <!-- start header -->
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <a class="navbar-brand" href="../index.html">
+                    <img src="../img/logo-html5.svg" alt="logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="paginas/produtos.html">Produtos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="paginas/servicos.html">Serviços</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="paginas/contato.html" tabindex="-1" aria-disabled="true">Contato</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <!-- end  header -->
+
+        <!--Start slider-->
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block w-100" src="../img/destaque-1.jpg" alt="Primeiro Slide">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h3>Primeira Imagem</h3>
+                        <p>descrição da minha primeira imagem</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="../img/destaque-2.jpg" alt="Segundo Slide">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Segunda Imagem</h5>
+                        <p> descrição da segunda imagem</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="../img/destaque-3.jpg" alt="Terceiro Slide">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h6>Terceira Imagem</h6>
+                        <p> descrição da terceira imagem</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="../img/contato-destaque.jpg" alt="Terceiro Slide">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h2>Quarta Imagem</h2>
+                        <p> descrição da quarta imagem</p>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Anterior</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Próximo</span>
+            </a>
+        </div>
+        <!--end slider-->
+
+        <!-- start conteudo principal com 3 articles -->
+        <section>
+            <article class="tecnologias">
+                <h2>html 5</h2>
+                <img src="img/html5.jpg" alt="html 5" />
+                <p>HTML5 (Hypertext Markup Language, versão 5) é uma linguagem de marcação para a World Wide Web e é uma tecnologia chave da Internet, originalmente proposto por Opera Software. É a quinta versão da linguagem HTML. Esta nova versão traz consigo
+                    importantes mudanças quanto ao papel do HTML no mundo da Web, através de novas funcionalidades como semântica e acessibilidade. Possibilita o uso de novos recursos antes possíveis apenas com a aplicação de outras tecnologias.</p>
+                <a href="https://pt.wikipedia.org/wiki/HTML5" target="_blank">Saiba mais</a>
+            </article>
+
+            <article class="tecnologias">
+                <h2>css 3</h2>
+                <img src="img/css3.jpg" alt="css 3" />
+                <p>CSS3 é a terceira mais nova versão das famosas Cascading Style Sheets (ou simplesmente CSS), onde se define estilos para seu projeto web.Com efeitos de transição, imagem de fundo/Background e outros, que dão um estilo novo e elegante a
+                    seus projetos web.Ou em todos os aspectos de design do layout da página. A principal função do CSS3 é abolir as imagens de plano/Background de fundo, bordas arredondadas, apresentar transições e efeitos para criar animações de vários
+                    tipos, como um simples relógio de ponteiros.</p>
+                <a href="https://pt.wikipedia.org/wiki/CSS3" target="_blank">Saiba mais</a>
+            </article>
+
+            <article class="tecnologias">
+                <h2>javascript</h2>
+                <img src="img/javascript.jpg" alt="java script" />
+                <p>JavaScript, frequentemente abreviado como JS, é uma linguagem de programação interpretada de alto nível, caracterizada também, como dinâmica, fracamente tipificada, prototype-based e multi-paradigma. Juntamente com HTML e CSS, o JavaScript
+                    é uma das três principais tecnologias da World Wide Web. JavaScript permite páginas da Web interativas e, portanto, é uma parte essencial dos aplicativos da web. A grande maioria dos sites usa, e todos os principais navegadores têm
+                    um mecanismo JavaScript dedicado para executá-lo.</p>
+                <a href="https://pt.wikipedia.org/wiki/JavaScript" target="_blank">Saiba mais</a>
+            </article>
+        </section>
+        <!-- end conteudo principal com 3 articles -->
+
+        <!-- start section com aside -->
+        <section>
+            <aside>
+                <h2>Fale com um especialista</h2>
+                <button class="btn-personalizado" data-toggle="modal" data-target="#ModalFaleConosco">Clique aqui!</button>
+            </aside>
+            <!-- Modal -->
+            <div class="modal fade" id="ModalFaleConosco" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalCenterTitle">Nós te ligamos</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="form-group text-left">
+                                <label for="nomeModal">Nome</label>
+                                <input class="form-control" type="text" name="nomeModal" id=nomeModal>
+                            </div>
+                            <div class="form-group text-left">
+                                <label for="nomeModal">Email</label>
+                                <input class="form-control" type="text" name="emailModal" id=emailModal>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                            <button type="button" class="btn btn-primary">Enviar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end section com aside -->
+
+        <footer>
+            <h3>Siga nossa redes</h3>
+            <p>
+                <a href="https://facebook.com" target="_blank"><img src="img/facebook.png" alt="Facebook" title="Facebook" /></a>
+                <a href="https://instagram.com" target="_blank"><img src="img/instagram.png" alt="Instagram" title="Instagram" /></a>
+                <a href="https://twitter.com" target="_blank"><img src="img/twitter.png" alt="Twitter" title="Twitter" /></a>
+                <a href="https://linkedin.com" target="_blank"><img src="img/linkedin.png" alt="Linkedin" title="Linkedin" /></a>
+                <a href="https://youtube.com" target="_blank"><img src="img/youtube.png" alt="Youtube" title="Youtube" /></a>
+            </p>
+
+            <address>
+                <p>
+                    Av Paulista, 1009 <br>
+                    CEP: 00000-000 <br>
+                    São Paulo / SP <br>
+                    Tel. 11 1234-5678
+                </p>
+            </address>
+
+            <p><em>Desenvolvido</em> por <strong>Thiago</strong> &copy; 2021 | Nenhum direito reservado.</p>
+
+        </footer>
+    </div>
+
+    <script src="js/jquery-min.3.5.1.js"></script>
+    <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src='../js/personalizacao.js'></script>
+</body>
+
+</html>

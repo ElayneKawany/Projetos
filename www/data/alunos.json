@@ -1,0 +1,21 @@
+{
+    "alunos": [{
+            "nome": "Vanessa",
+            "curso": "ADS",
+            "nota": 7,
+            "status": "ATIVO"
+        },
+        {
+            "nome": "Gilson",
+            "curso": "Banco de Dados",
+            "nota": 4,
+            "status": "INATIVO"
+        },
+        {
+            "nome": "André",
+            "curso": "Sistemas de Informação",
+            "nota": 8,
+            "status": "ATIVO"
+        }
+    ]
+}
